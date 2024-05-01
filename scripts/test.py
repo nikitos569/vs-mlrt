@@ -43,7 +43,6 @@ def get_plugins_path() -> str:
     return os.path.dirname(path).decode()
 
 plugins_path: str = get_plugins_path()
-trtexec_path: str = os.path.join(plugins_path, "vsmlrt-cuda", "trtexec")
 migraphx_driver_path: str = os.path.join(plugins_path, "vsmlrt-hip", "migraphx-driver")
 models_path: str = os.path.join(plugins_path, "models")
 
